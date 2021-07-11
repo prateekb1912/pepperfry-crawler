@@ -7,17 +7,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'pepperfry_challenge'
+BOT_NAME = 'pepperfry_crawler'
 
 SPIDER_MODULES = ['pepperfry_challenge.spiders']
 NEWSPIDER_MODULE = 'pepperfry_challenge.spiders'
-
+USER_AGENT = 'Mozilla/5.0'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'pepperfry_challenge (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
